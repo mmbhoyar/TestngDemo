@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Command line suite]">
+  <test name="Command line test" preserve-order="false">
+    <classes>
+      <class name="com.demo.TestNGRemarks"/>
+      <class name="com.login.BTest"/>
+      <class name="com.login.LoginTest"/>
+      <class name="com.login.TestNGListenerForReporting"/>
+      <class name="com.login.xTest"/>
+      <class name="com.login.ZTest"/>
+    </classes>
+  </test> <!-- Command line test -->
+  <test name="Command line test(failed)">
+    <classes>
+      <class name="com.login.ZTest">
+        <methods>
+          <include name="xx"/>
+          <include name="aaa"/>
+          <include name="aa1"/>
+          <include name="demo"/>
+        </methods>
+      </class> <!-- com.login.ZTest -->
+      <class name="com.login.LoginTest">
+        <methods>
+          <include name="validLogin"/>
+        </methods>
+      </class> <!-- com.login.LoginTest -->
+      <class name="com.login.xTest">
+        <methods>
+          <include name="xx"/>
+        </methods>
+      </class> <!-- com.login.xTest -->
+      <class name="com.login.BTest">
+        <methods>
+          <include name="m1"/>
+          <include name="t1"/>
+          <include name="t2"/>
+          <include name="demo"/>
+          <include name="m2"/>
+        </methods>
+      </class> <!-- com.login.BTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Command line suite] -->

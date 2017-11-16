@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [MavenDemo]">
+  <listeners>
+    <listener class-name="com.login.TestNGListenerForReporting"/>
+  </listeners>
+  <test name="TestNG Sample">
+    <classes>
+      <class name="com.login.xTest"/>
+      <class name="com.login.BTest"/>
+      <class name="com.login.ZTest"/>
+      <class name="com.login.LoginTest"/>
+    </classes>
+  </test> <!-- TestNG Sample -->
+  <test name="TestNG Sample(failed)">
+    <classes>
+      <class name="com.login.ZTest">
+        <methods>
+          <include name="xx"/>
+          <include name="aaa"/>
+          <include name="aa1"/>
+          <include name="demo"/>
+        </methods>
+      </class> <!-- com.login.ZTest -->
+      <class name="com.login.xTest">
+        <methods>
+          <include name="xx"/>
+        </methods>
+      </class> <!-- com.login.xTest -->
+      <class name="com.login.LoginTest">
+        <methods>
+          <include name="validLogin"/>
+        </methods>
+      </class> <!-- com.login.LoginTest -->
+      <class name="com.login.BTest">
+        <methods>
+          <include name="m1"/>
+          <include name="t1"/>
+          <include name="t2"/>
+          <include name="demo"/>
+          <include name="m2"/>
+        </methods>
+      </class> <!-- com.login.BTest -->
+    </classes>
+  </test> <!-- TestNG Sample(failed) -->
+</suite> <!-- Failed suite [MavenDemo] -->

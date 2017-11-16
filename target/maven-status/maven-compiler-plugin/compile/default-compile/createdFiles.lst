@@ -1,0 +1,10 @@
+com\demo\App.class
+com\demo\Stud.class
+com\demo\login\AppConstants.class
+com\demo\login\LoginDAO.class
+com\demo\Remarks.class
+com\demo\login\LoginDAOImpl.class
+com\demo\TestNGPIEChart.class
+com\demo\login\LoginController.class
+com\demo\Address.class
+com\demo\TestSetImplementedClasses.class

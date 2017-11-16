@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="MavenDemo" verbose="1">
+	
+	<listeners>
+		<listener class-name="com.login.TestNGListenerForReporting" />
+	</listeners>
+
+	<test name="TestNG Sample" preserve-order="true">
+		<classes>
+			<class name="com.login.xTest"/>
+			<class name="com.login.BTest"/>
+			<class name="com.login.ZTest"/>
+			<class name="com.login.LoginTest"/>
+		</classes>
+	</test>
+
+</suite>

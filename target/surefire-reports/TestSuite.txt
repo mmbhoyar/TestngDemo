@@ -1,0 +1,18 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 18, Failures: 2, Errors: 0, Skipped: 1, Time elapsed: 1.729 sec <<< FAILURE!
+t2(com.login.BTest)  Time elapsed: 0.013 sec  <<< FAILURE!
+java.lang.ArithmeticException: / by zero
+	at com.login.BTest.t2(BTest.java:54)
+
+validLogin(com.login.LoginTest)  Time elapsed: 0.003 sec  <<< FAILURE!
+java.lang.AssertionError: expected [Login Successful] but found [Login Failed]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:135)
+	at org.testng.Assert.assertEquals(Assert.java:116)
+	at org.testng.Assert.assertEquals(Assert.java:190)
+	at org.testng.Assert.assertEquals(Assert.java:200)
+	at com.login.LoginTest.validLogin(LoginTest.java:35)
+
